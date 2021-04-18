@@ -18,5 +18,5 @@ Werkzeug==1.0.1
 nltk
 numpy
 pandas
-pickle==4.0
+pickle4
 sklearn
