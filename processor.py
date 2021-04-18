@@ -3,15 +3,15 @@ from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 import pickle
 import numpy as np
-with open('app/models/rf_model', 'rb') as f:
+with open('models/rf_model', 'rb') as f:
     model = pickle.load(f)
 import json
 import random
 
 
-intents = json.loads(open('app/data/intents.json', encoding='utf-8').read())
-words = pickle.load(open('app/data/words.pkl','rb'))
-classes = pickle.load(open('app/data/classes.pkl','rb'))
+intents = json.loads(open('data/intents.json', encoding='utf-8').read())
+words = pickle.load(open('data/words.pkl','rb'))
+classes = pickle.load(open('data/classes.pkl','rb'))
 
 
 def clean_up_sentence(sentence):
