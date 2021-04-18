@@ -21,4 +21,4 @@ pandas
 pickle4
 sklearn
 keras
-tensorflow==1.15
+tensorflow==2.2.0
