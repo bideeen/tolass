@@ -21,3 +21,4 @@ pandas
 pickle4
 sklearn
 keras
+tensorflow
