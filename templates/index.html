@@ -1,82 +1,115 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Skolo</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-  </head>
-  <body>
-    <div class="container">
-      <h1>Welcome to Tola's Chatbot</h1>
-      <br>
-      <hr>
-      <br>
-
-
-        <div class="row">
-          <div class="col">
-            <p id="response"></p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-9">
-            <input class="form-control" type="text" name="question" id="question">
-          </div>
-          <div class="col-lg-3">
-            <button class="btn btn-primary btn-block" id="submit-button">Send</button>
-          </div>
-        </div>
-        <br>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+        * {
+            box-sizing: border-box;
+        }
+        html {
+            background: rgba(0, 0, 0, 0.03);
+        }
+        body, html {
+            height: 100%;
+        }
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 115%;
+            display: flex;
+            flex-direction: column;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .chat-output {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            background: white;
+            flex-direction: column;
+        }
+        .chat-output > div {
+            margin: 0 0 20px 0;
+        }
+        .chat-output .user-message .message {
+            background: #0fb0df;
+            color: white;
+        }
+        .chat-output .bot-message {
+            text-align: right;
+        }
+        .chat-output .bot-message .message {
+            background: #eee;
+        }
+        .chat-output .message {
+            display: inline-block;
+            padding: 12px 20px;
+            border-radius: 10px;
+        }
+        .chat-input {
+            padding: 20px;
+            background: #eee;
+            border: 1px solid #ccc;
+            border-bottom: 0;
+        }
+        .chat-input .user-input {
+            width: 100%;
+            font-size: 2rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 8px;
+        }
         
+    </style>
+</head>
+<body>
 
-    </div>
+    <div class="chat-output" id="chat-output">
+        <div class="user-message">
+          <div class="message">Hi! I'm a Tola. What's up?</div>
+        </div>
+      </div>
+      
+      <div class="chat-input">
+        <form action="#0" id="user-input-form">
+          <input type="text" id="user-input" class="user-input" placeholder="Talk to the bot.">
+        </form>
+      </div>
 
     <script src="/static/jquery.min.js" ></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
+  
     <script>
+        
+        jQuery(document).ready(function() {
 
+            $("#user-input-form").on("submit", function(e) {
+        
+                e.preventDefault();
+                
+                $.ajax({
+                    type: "POST",
+                    url: "/chatbot",
+                    data: {
+                        question: $("#user-input").val()
+                    },
+                    success: function(result){
+                        $("#chat-output").append("<div class='bot-message'><div class='message'>"+ $("#user-input").val() +"</div></div>");
+                        $("#chat-output").append("<div class='user-message'><div class='message'>"+ result.response +"</div></div>");
+                        $("#user-input").val("")
 
-      jQuery(document).ready(function() {
-
-        $("#submit-button").click(function(e) {
-          e.preventDefault();
-
-
-          $.ajax({
-              type: "POST",
-              url: "/chatbot",
-              data: {
-                  question: $("#question").val()
-              },
-              success: function(result) {
-                $("#response").append("<br>Me: "+$("#question").val()+ "<br> Tola: "+result.response);
-                $("#question").val("")
-              },
-              error: function(result) {
-                  alert('error');
-              }
-          });
-
-
-
-        });
-
-      });
-
-
+                    },
+                    error: function(result) {
+                      alert('error');
+                  }
+                
+                });
+            });
+        });        
     </script>
-
-  </body>
+    
+</body>
 </html>
