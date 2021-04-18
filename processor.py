@@ -1,6 +1,7 @@
 import nltk
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
+nltk.download('punkt')
 import pickle
 import numpy as np
 with open('models/rf_model', 'rb') as f:
