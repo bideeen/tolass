@@ -4,7 +4,7 @@ import processor
 
 app = Flask(__name__)
 
-app.config['SECRET_KEY'] = 'bideenasdfghjkl'
+app.config['SECRET_KEY'] = 'asdfhjklklytewedd'
 
 
 @app.route('/', methods=["GET", "POST"])
