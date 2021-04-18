@@ -4,8 +4,12 @@ lemmatizer = WordNetLemmatizer()
 nltk.download('punkt')
 import pickle
 import numpy as np
-with open('models/rf_model', 'rb') as f:
-    model = pickle.load(f)
+# with open('models/rf_model', 'rb') as f:
+#     model = pickle.load(f)
+
+from keras.models import load_model
+model = load_model('models/chatbot_model.h5')
+
 import json
 import random
 
