@@ -1,0 +1,142 @@
+{"intents": [
+    {
+        "tags": "greetings",
+        "patterns": ["hello","hey","Hi","What's up,", "Hi there", "What do you do?"],
+        "responses": ["hello friend","Hey!", "What can I do for you?", "Hi there, what can I help you with?"]
+    },
+    {
+        "tags": "continuation",
+        "patterns": ["tell me more please", ""],
+        "responses": ["what would like me to help you with?", "What else can i do for you?", "great, so what else do you need?"]
+    },
+    {
+        "tags": "goodbye",
+        "patterns": ["bye","good bye","ok","What's up,", "later", ""],
+        "responses": ["thanks, have a great day!","bye for now!", "hope to see you some other time?"]
+    },
+    {
+        "tags": "history",
+        "patterns": ["Lautech"," Who is lautech?", "Lautech History", "When was lautech established?", "When was lautech founded?", "Tell me about Lautech?"],
+        "responses": ["Ladoke Akintola University of Technology is an autonomous public institution with the general \n\n function of providing liberal higher education and encouragement to the \n\n rapid advancement of learning throughoutNigeria. \n\nThe legal basis of the University is the Ladoke Akintola University of \n\n Technology Act which transferred to the University, the property to the former Ogbomoso \n \nGirls High School, Ogbomoso, under the Act; - \n\n The University consists of Chancellor, pro-chancellor, Vice-Chancellor, Council Senate, Congregation, all Graduates and Undergraduates of the University in \n\n accordance with the provisions of the Ladoke Akintola University of Technology Edict No \n\nThe university runs three academic programmes: pre-degree science program, \n\n undergraduate programmes and post-graduate programmes. \n\n The university is jointly owned by two states in Nigeria:Oyo and Osun states. \n The entire student body population is presently about 20,000. For two consequtive seasons, 2003 and 2004, \n the university has been adjudged by the Nigerian Universities Commission (NUC) as \n the best state university in Nigeria. The university has two campuses: ogbomoso \n and osogbo campuses and is currently made up of six faculties and a college."]
+    },
+    {
+        "tags": "vc",
+        "patterns": ["Lautech Vc","Who is the Vc of Lautech?", "Vice Chancellor", "Chancellor", "Vc's name"," the name of lautech vc?"],
+        "responses": ["The name of Lautech Vice Chancellor is PROF . M.O. OLOGUNDE."]
+    },
+    {
+        "tags": "mission",
+        "patterns": ["mission statement", "what is the mission statement of lautech mission statement", "vision statement", "vision and mission statement", "what is the vision and mission statement of lautech mission statement"],
+        "responses": ["Lautech vision is To be a centre of academic excellence for the advancement of technology in meeting socio-cultural needs of the society. It's mission is to provide suitable condition for the advancement of knowledge through research and learning; produce self-reliant graduates, apply technology-driven knowledge to creativity and positively impact on the global environment and be epitome of integrity and service. ."]
+    },
+    {
+        "tags": "predegree",
+        "patterns": ["predegree lautech","pre degree lautech form", "Lautech pre degree","Lautech Pre degree form"],
+        "responses": ["Admission into the Pre-Degree Science Programme will normally require a minimum of five credits (at two sittings) at SSCE, GCE, NECO, and NABTEB ordinary level in Biology, Chemistry, English Language, Mathematics and Physics.   \n\nFor more Information click the following link : https://www.pds.lautech.edu.ng/"]
+    },
+    {
+        "tags": "undergraduate fee",
+        "patterns": ["undergraduate", "under grad","under graduate","Lautech undergraduate tuition fee","How much is undergraduate","Payment for Lautech undergraduate studies","undergraduate studies fee", "Amount for undergraduate studies in lautech"],
+        "responses": ["Tuition Fee For 2015-2016 Set & below (Indigene) =N= 90,000:00 (amount payable(full)) =N= 45,000:00(amount payable(half)) \n \n Tuition Fee For 2015-2016 Set & below (Non-Indigene) =N= 100,000:00(amount payable(full)) =N= 50,000:00(amount payable(half)) \n \n Tuition Fee For 2017-2018 Set (Indigene) =N= 120,000:00(amount payable(full)) =N= 60,000:00(amount payable(half)) \n \n Tuition Fee For 2017-2018 (Non-Indigene) =N= 150,000:00(amount payable(full)) =N= 75,000:00(amount payable(half)) \n \n Tuition Fee For 2018-2019 Set & above (Indigene) =N= 140,000:00 =N= 70,000:00"]
+    },
+    {
+        "tags": "under graduate ",
+        "patterns": ["Lautech undergraduate tuition fee","How much is undergraduate","Payment for Lautech undergraduate studies","undergraduate studies fee", "Amount for undergraduate studies in lautech"],
+        "responses": ["Tuition Fee For 2015-2016 Set & below (Indigene) =N= 90,000:00 (amount payable(full)) =N= 45,000:00(amount payable(half)) \n \n Tuition Fee For 2015-2016 Set & below (Non-Indigene) =N= 100,000:00(amount payable(full)) =N= 50,000:00(amount payable(half)) \n \n Tuition Fee For 2017-2018 Set (Indigene) =N= 120,000:00(amount payable(full)) =N= 60,000:00(amount payable(half)) \n \n Tuition Fee For 2017-2018 (Non-Indigene) =N= 150,000:00(amount payable(full)) =N= 75,000:00(amount payable(half)) \n \n Tuition Fee For 2018-2019 Set & above (Indigene) =N= 140,000:00 =N= 70,000:00"]
+    },
+    {
+        "tags": "postgraduate",
+        "patterns": ["Lautech postgraduate","What is postgraduate","Lautech postgraduate studies","postgraduate studies", "postgraduate studies in lautech"],
+        "responses": ["The Postgraduate programs at the Ladoke Akintola University of Technology, Ogbomoso is administered by the Postgraduate School following the academic policies established by the University’s senate and the Postgraduate School Board, a standing committee of Senate. The Postgraduate School is headed by the Dean, who is also the Chairman of the Postgraduate School Board.    \n\nFor more information click here: https://www.pgschool.lautech.edu.ng/"]
+    },
+    {
+        "tags": "postgraduate fee",
+        "patterns": ["Lautech postgraduate tuition fee","How much is postgraduate","Payment for Lautech postgraduate studies","postgraduate studies fee", "Amount for postgraduate studies in lautech"],
+        "responses": ["Tuition Fee (M.Sc, M.Tech, M.Phil Program) =N= 96,000:00 \n \n Tuition Fee (PGD, M.Phil/Ph.D, Ph.D) =N= 111,000:00 \n \n Examination Fee (Once per Program) - PGD =N=50,000:00 \n \n Examination Fee (Once Per Program) - M.Tech/M.Phil =N=90,000:00 \n \n Examination Fee (Once Per Program) - M.Phil/Ph.D, Ph.D =N=100,000:00   \n \n For more information click here: https://www.pgschool.lautech.edu.ng/portal/"]
+    },
+    {
+        "tags": "Direct Entry Admission",
+        "patterns": ["Admission by Direct Entry","Direct entry admission","200l direct entry","admission into 200l","DE into 200l"],
+        "responses": ["Admission to 200 level by Direct Entry is based on the performance at the G.C.E. ”A” Level Examination or its equivalent. Applicants with any of the following qualifications may be considered for admission by Direct Entry, provided all the five subjects at '0' Level are obtained at not more than two sittings; ND with upper credit/HND/N.C.E. at credit level in relevant subjects (plus U.M.E. requirements) may be considered for admission into the 200 Level. Penalty for Gaining Admission with Falsified Credentials/Certificates Candidates admitted to the University are seriously warned in their own interest, not to present false credentials/certificates to the University for their admission. The laws that established LAUTECH empowers the Senate to deprive any person of any degree, diploma or other award of the University which has been conferred upon him/her if, after due enquiry, it is discovered that the candidate has fraudulently gained admission into the University or obtained that award."]
+    },
+    {
+        "tags": "Undergraduate Admission",
+        "patterns": ["Admission of Students into the University through U.M.E/Pre-Degree Programme","Undergraduate admission","Lautech admission","Lautech undergraduate admission","Admission into Lautech","Lautech admission requirement","admission requirements in lautech" ],
+        "responses": ["Admission to 100 level is on the basis of performance in the University Matriculation Examination (U.M.E.) conducted by the Joint Admission and Matriculation Board (JAMB) or good performances in the Pre-Degree Science Programme final examination. In addition, candidate must have at least five credit passes in English Language, Mathematics, Chemistry, Physics and Biology at the S.S.C.E/G.C.E O'Level or its equivalent in order to qualify for admission into any of the faculties. For this purpose, a combination of credit passes at ”0” Level in five science subjects and at not more than two sittings is acceptable. Candidates are also required to fulfill such faculty and department entry requirements as may be prescribed from time to time."]
+    },
+    {
+        "tags":"Postgraduate admission",
+        "patterns": ["postgraduate admission","PG admission requirement","PG admission"],
+        "responses": ["For Postgraduate Diploma, candidate must possess Bachelor of technology (b.tech), bachelor of science (b.sc.), bachelor of engineering (b.eng) or bachelor of arts (B.A), bachelor of medical laboratory science (BMLS) degree with at least 3rd class in relevant disciplines or higher national diploma certificate (HND) in relevant disciplines with at least lower credit","candidates with MB; BS and DVM may be considered for postgraduate diploma in Biochemistry."]
+    },
+    {
+        "tags": "Credit acceptance for DE",
+        "patterns": ["Does Lautech accept lower credit for direct entry","Can lautech accept lower credit"],
+        "responses": ["LAUTECH does not accept lower credit for direct entry admission into all its programmes."]
+    },
+    {
+        "tags": "Master's Admission",
+        "patterns": ["lautech master's degree","MSC in lautech","master's admission","admission into master's degree into lautech","studying for master's in lautech"],
+        "responses": ["candidates must possess bachelor of technology (b.tech), bachelor of science (b.sc), bachelor of engineering (b.eng) or bachelor of Arts(b.a), bachelor of medical laboratory science (BMLS) degree with at least second class lower division in relevant discipline","also, candidates with bachelor of pharmacy (b.pharm), holders of PGD in relevant disciplines must have a score of 60 for M.Tech./M.sc. programme."]
+    },
+    {
+        "tags": "PHD admission",
+        "patterns": ["lautech PHD degree","PHD in lautech","PHD admission","admission into PHD degree into lautech", "studying for PHD in lautech"],
+        "responses": ["candidates must have a minimum score of 50 for M.phil and 60 for ph.D in their masters degrees.","applicants for ph.D may be required to commence with M.Phil/Ph.D. where appropriate."]
+    },
+    {
+        "tags": ["Time duration","time","Time"],
+        "patterns": ["Admisiion duration time","post graduate duration time","PG in lautech study duration","Time to study PG in lautech"],
+        "responses": ["full-time, postgraduate diploma-minimum of two (2) semesters; Master- minimum of three (3) semesters; phil-minimum of three (3) semesters; phD - minimum of six (6) semesters.","part time, postgraduate Diploma- minimum of three (3) semesters; master-Minimum of six (6) semesters; phil-minimum of six (6) semesters; phD-minimum of eight (8) semesters."]
+    },
+    {
+        "tags": "lautech postgraduate admission form",
+        "patterns": ["how to apply for lautech postgraduate form","How much is lautech PG admission form","PG form","PG admission form"],
+        "responses": ["lautech postgraduate form fee is #10,000 (excluding the bank charges).","payment method: payments will be made using INTERSWITCH ENABLED DEBIT cards (ATM cards).","candidadtes are to visit www.pgschool.lautech.edu.ng/application. to complete the form and print.","printed application form with photocopies of certificates/Diplomas including 'O level and NYSC certificates, transcripts and other relevant documents should reach the secretary, postgraduate school, LAUTECH, Ogbomoso not later than six weeks from the date of publication."]
+    },
+    {
+        "tags": "Lautech cut off mark",
+        "patterns": ["What is the cut off mark of Lautech?","Lowest utme score to enter lautech","lautech utme score","lautech jamb score","cut off score for lautech"],
+        "responses": ["LAUTECH cut off mark for 2020/2021 is 170"]
+    },
+    {
+        "tags": "Lautech post Utme",
+        "patterns": ["Is Lautech post Utme 2020 2021 Out?","When will lautech post utme be out","Lautech post utme","Time for lautech post utme"],
+        "responses": ["This is to inform the general public especially UTME and Direct entry candidates that the Ladoke Akintola University of Technology (LAUTECH) third batch post utme form for 2020/2021 session is out."]
+    },
+   {
+        "tags": "Number of sittings",
+        "patterns": ["Does Lautech accept two sittings","How many sittings does lautech accept","Can I use waec and neco","Can I combine two O'levels","Can I combine results"],
+        "responses": ["A combination of credit passes at ”0” Level in five science subjects and at not more than two sittings is acceptable","Yes, Lautech accepts a combination of credit passes at ”0” Level in five science subjects and at not more than two sittings is acceptable",""]
+    },
+    {
+        "tags": "Admission Status",
+        "patterns": ["Admission Status","Status","Admission Status","How can I check my admission status in Lautech","Checking admission status in Lautech","How to check if I have admission already","My admission status in Lautech"],
+        "responses": ["Go to LAUTECH admission status checking portal https://www.admissions.lautech.edu.ng/status.php, 1.Supply your JAMB Registration Number in the required column, 2. Click on 'Check' to access your admission status.","",""]
+    },
+    {
+        "tags": "Screening result Calculation",
+        "patterns": ["How does Lautech calculate their screening result","How is screening calculated","How is result calculated",""],
+        "responses": ["The LAUTECH admission board calculates its aggregate by combining JAMB and Post UTME scores. Your O'level Grades must be complete. O'level grades are the minimum of 5 credit passes in subjects relevant to your course of study and it must include mathematics and English language."]
+    },
+    {
+        "tags": "Post Utme",
+        "patterns": ["Does Lautech conduct post Utme","Do they write post jamb in lautech","Does lautech write post utme","Post utme in Lautech"],
+        "responses": ["LAUTECH will conduct Post-UTME Computer Based Test (CBT) screening exercise for UTME CANDIDATES and oral interview for Direct Entry candidates on a date to be announced soon. Any applicant who fails to present himself/herself for the CBT as scheduled automatically forfeits being considered for admission."]
+    },
+    {
+        "tags": "Awaiting Result",
+        "patterns": ["Does Lautech accept awaiting result","Can I use awaiting result while choosing Lautech","Is awaiting result allowed in lautech","Can awaiting result be used while applying to lautech"],
+        "responses": ["Yes! they accept awaiting result candidates to be eligible for Post UTME exercise. However, anyone that applied with an awaiting result must be very sure that their result will be out before the release of their first batch admission list."]
+    },
+    {
+        "tags": "Jupeb",
+        "patterns": ["Does Lautech accept Jupeb","Jupeb in Lautech","Can I use Jupeb to enter Lautech","Can my Jupeb be accepted in Lautech"],
+        "responses": ["Applications are invited from suitably qualified candidates for admission into the Ladoke Akintola University of Technology (LAUTECH) one (1) year Joint Universities Preliminary Examinations Board (JUPEB) programme for the 2020/2021 academic session."]
+    },
+    {
+        "tags": "Ijmb",
+        "patterns": ["Does Lautech accept IJMB","Ijmb in Lautech","Can I use Ijmb to enter Lautech","Can my Ijmb be accepted in Lautech"],
+        "responses": [" Yes! LAUTECH accept IJMB result for direct entry admission into 200 Level."]
+    }
+]}
